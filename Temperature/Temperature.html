@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    let Temperature=function (celsius)
+    {
+         this.celsius=celsius;
+        this.setcelsius=function (celsius)
+        {
+            this.setcelius=celsius;
+        }
+
+        this.getfahrenheit=function ()
+        {
+            return 9/5 * this.celsius + 32;
+        }
+        this.getkelvins=function ()
+        {
+            return this.celsius + 273.15;
+        }
+
+    }
+    let Temperature1 = new Temperature(25)
+    let fahrenheit=Temperature1.getfahrenheit();
+    let kelvins=Temperature1.getkelvins();
+    alert(" fahrenheit= "+ fahrenheit );
+    alert("kelvins= "+ kelvins);
+
+
+</script>
+</body>
+</html>
